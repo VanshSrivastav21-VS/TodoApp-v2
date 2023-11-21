@@ -1,0 +1,301 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Open Mateo</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <!-- FontAwesome 6.2.0 CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- (Optional) Use CSS or JS implementation -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/js/all.min.js"
+        integrity="sha512-naukR7I+Nk6gp7p5TMA4ycgfxaZBJ7MO5iC3Fp6ySQyKFHOGfpkSZkYVWV5R7u7cfAicxanwYQ5D1e17EfJcMA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <style>
+        .hero {
+            background-image: url('https://open-meteo.com/images/convective_clouds.webp');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+
+        }
+
+        .tshadow {
+            text-shadow: 3px 2px 3px #222;
+        }
+        p{
+            margin-top: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+
+    </style>
+</head>
+
+<body class="bg-dark text-white">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <i class="fa fa-sun"></i> Open Mateo
+                </a>
+                <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavId">
+                    <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#" aria-current="page">Home <span
+                                    class="visually-hidden">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Pricing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">API Docs</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav mt-2 mt-lg-0">
+                        <li class="nav-item"><a href="#" class="nav-link"><i class="fa-brands fa-github fa-2x"></i></a>
+                        </li>
+                        <li class="nav-item"><a href="#" class="nav-link"><i class="fa-brands fa-twitter fa-2x"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <div class="dropdown open">
+                                <button class="btn dropdown-toggle nav-link" type="button" id="triggerId"
+                                    data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="fa fa-moon fa-2x"></i>
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="triggerId">
+                                    <button class="dropdown-item" href="#">
+                                        <i class="fa fa-sun"></i> Light
+                                    </button>
+                                    <button class="dropdown-item" href="#">
+                                        <i class="fa fa-moon"></i> Dark
+                                    </button>
+                                    <button class="dropdown-item" href="#">
+                                        <i class="fa fa-adjust"></i> Auto
+                                    </button>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="">
+        <div class="container-fluid hero text-center text-white p-5 mb-5">
+            <div class="row m-5">
+                <div class="col-12 ">
+                    <i class="fa fa-cloud-sun fa-5x mb-3 "></i>
+                    <div class="display-5 mb-3 tshadow ">
+                        Free Weather API
+                    </div>
+                </div>
+                <div class="col-lg-6 mx-auto">
+                    <p class="lead mb-3 tshadow">
+                        Open-Meteo is an open-source weather API and offers free access for non-commercial use. No API
+                        key
+                        required. Start using it now!
+                    </p>
+                    <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                        <a class="btn btn-primary btn-lg px-4" href="#" role="button">Features</a>
+                        <a class="btn btn-outline-light btn-lg px-4" href="#" role="button">Documentation</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container col-xxl-8 px-4 py-5">
+            <div class="row g-5">
+                <div class="col-lg-6">
+                    <h1 class="display-5 lh-1 mb-3">Accurate Weather Forecasts for Any Location</h1>
+                    <p class="lead">
+                        Open-Meteo partners with national weather services to bring you open data with high resolution,
+                        ranging from 1 to 11 kilometers. Our powerful APIs intelligently select the most suitable
+                        weather models for your specific location, ensuring accurate and reliable forecasts.
+                    </p>
+                    <p>With our user-friendly JSON API, accessing weather data has never been easier. Whether you're
+                        developing an application or seeking weather information for personal use, our APIs provide
+                        seamless integration and deliver the data you need in a simple and accessible format.</p>
+                    <p>Experience the precision and convenience of Open-Meteo's Forecast API, providing comprehensive
+                        weather information worldwide. Stay informed and make informed decisions with our reliable
+                        weather forecasts.</p>
+                    <div class="d-grid d-sm-flex gap-2">
+                        <a class="btn btn-primary btn-lg" href="#" role="button">See Features</a>
+                        <a class="btn btn-outline-secondary btn-lg" href="#" role="button">Read the Docs</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 bg-dark rounded-3 text-white p-3">
+                    <!-- Nav tabs -->
+                    <ul class="nav nav-pills mb-3" id="myTab" role="tablist">
+                      <li class="nav-item  " role="presentation">
+                        <button class="btn btn-outline-light active me-1" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Forecast & Current</button>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                        <button class="btn btn-outline-light me-1" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Last 10 days</button>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                        <button class="btn btn-outline-light" id="messages-tab" data-bs-toggle="tab" data-bs-target="#messages" type="button" role="tab" aria-controls="messages" aria-selected="false">Historical data</button>
+                      </li>
+                    </ul>
+                    
+                    <!-- Tab panes -->
+                    <div class="tab-content mb-3">
+                      <div class="tab-pane active" id="home" role="tabpanel" aria-labelledby="home-tab"> home </div>
+                      <div class="tab-pane" id="profile" role="tabpanel" aria-labelledby="profile-tab"> profile </div>
+                      <div class="tab-pane" id="messages" role="tabpanel" aria-labelledby="messages-tab"> messages </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container pt-4">
+            <div class="row">
+                <div class="col-lg-6 col-xxl-4">
+                    <div class="title-area d-flex align-items-center">
+                        <i class="fa fa-sun fa-3x bg-primary rounded-3 p-2 text-white me-3"></i>
+                        <h2>High Resolution</h2>
+                    </div>
+                    <div>
+                        <p>Open-Meteo leverages a powerful combination of global (11 km) and mesoscale (1 km) weather models from esteemed national weather services, providing comprehensive forecasts with remarkable precision. No matter where you are in the world, you can access the most reliable and accurate weather predictions available.</p>
+                        <p>Our weather data is presented in hourly resolution, allowing you to plan your activities with confidence. The initial days of the forecast benefit from localized weather models, offering highly detailed and accurate information. Subsequently, global weather models provide forecasts for up to 16 days. Through seamless integration, our APIs deliver a straightforward and reliable hourly weather forecast experience.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-xxl-4">
+                    <div class="title-area d-flex align-items-center">
+                        <i class="fa fa-clock fa-3x bg-primary rounded-3 p-2 text-white me-3"></i>
+                        <h2>Rapid Updates</h2>
+                    </div>
+                    <div>
+                        <p>At Open-Meteo, we understand the importance of having the most up-to-date weather information. That's why our local weather models are updated every hour, ensuring that our forecasts reflect the latest changes in conditions, including updates from rain radars.</p>
+                        <p>Our weather models rely on a wealth of real-time data, including measurements from various sources such as airplanes, buoys, radar systems, and satellites. By incorporating this diverse and comprehensive data, our numerical weather predictions provide a deeper analysis than traditional weather stations, resulting in more accurate forecasts.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-xxl-4">
+                    <div class="title-area d-flex align-items-center">
+                        <i class="fa fa-box-archive fa-3x bg-primary rounded-3 p-2 text-white me-3"></i>
+                        <h2>80 Years Historical Data</h2>
+                    </div>
+                    <div>
+                        <p>Explore the past with our comprehensive <a href="#">Historical Weather API</a>. With over 80 years of hourly weather data available at a 10 kilometer resolution, you can dive into the climate of any location. Behind the scenes, this extensive dataset, comprising 50 TB of information, enables you to access temperature records spanning eight decades in an instant.</p>
+                        <p>Moreover, our 1 kilometer weather models continuously archive recent data, ensuring that you can seamlessly retrieve the latest forecasts alongside historical information from previous weeks. This functionality opens up possibilities for training machine learning applications and gaining valuable insights from the combination of present and past weather data. Discover the power of our historical weather API and unlock a treasure trove of weather information.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-xxl-4">
+                    <div class="title-area d-flex align-items-center">
+                        <i class="fa-brands fa-github fa-3x bg-primary rounded-3 p-2 text-white me-3"></i>
+                        <h2>Open-Source</h2>
+                    </div>
+                    <div>
+                        <p>We believe in the power of open-source software. That's why the entire codebase of Open-Meteo is accessible on <a href="#">GitHub</a>, released under the <a href="#">AGPLv3 licence</a>. This means you can explore, use, modify, and contribute to the code.</p>
+                        <p>If you wish to take it a step further, we're here to support you in setting up your own API instances. This allows you to have complete control and enjoy practically unlimited API calls, making it ideal for demanding applications like machine learning or large language models.</p>
+                        <p>In addition, our data is licensed under <a href="#">Attribution 4.0 International (CC BY 4.0)</a>. This means you are free to share and adapt the data, even for commercial purposes. We believe in fostering an open ecosystem that encourages transparency, collaboration and innovation.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-xxl-4">
+                    <div class="title-area d-flex align-items-center">
+                        <i class="fa fa-key fa-3x bg-primary rounded-3 p-2 text-white me-3"></i>
+                        <h2>Free API</h2>
+                    </div>
+                    <div>
+                        <p>Open-Meteo offers free access to its APIs for non-commercial use, making it convenient for individuals and developers to explore and integrate weather data into their projects. The best part is that no API key, registration, or credit card is required to enjoy this service.</p>
+                        <p>We trust our users to utilize the free API responsibly and kindly request appropriate credit for the data used. While there are no strict access restrictions, we encourage fair usage of the service. If you require commercial usage or anticipate exceeding 10'000 API calls per day, we recommend considering our <a href="#">API subscription</a> for enhanced features and support.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-xxl-4">
+                    <div class="title-area d-flex align-items-center">
+                        <i class="fa-regular fa-lightbulb fa-3x bg-primary rounded-3 p-2 text-white me-3"></i>
+                        <h2>Easy to Use</h2>
+                    </div>
+                    <div>
+                        <p>We've designed our APIs to be incredibly user-friendly. They are based on the widely adopted HTTP protocol and utilize the simplicity of JSON data format. All you need to get started is a basic understanding of geographic coordinates, making HTTP requests, and working with JSON data.</p>
+                        <p>To assist you in seamlessly integrating our APIs into your projects, we provide comprehensive <a href="#">documentation</a>. It includes detailed explanations of all parameters and their usage. Whether you're using Python, R, Julia, PHP, JavaScript, React, Flutter, Java, or any other programming language, our APIs are designed to work effortlessly with your application.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div class="container py-5 pt-4">
+        <div class="py-5 px-4 text-center">
+            <i class="fa fa-box fa-5x"></i>
+            <h5 class="fw-bold fa-3x">Stay up to date!</h5>
+            <div class="col-lg-12 mx-auto">
+                <p class="lead">
+                We're constantly evolving and expanding. We're dedicated to providing you with the <a href="#">latest features</a>, weather variables, and data sources. If you want to stay in the loop and be the first to know about our exciting updates, we invite you to subscribe to our <a href="#">blog</a> or follow us on <a href="#">Twitter</a>. By doing so, you'll never miss out on the latest developments and enhancements in our services.
+                </p>
+                <div class="d-grid d-sm-flex gap-2 justify-content-sm-center">
+                    <a class="btn btn-primary btn-lg px-4 gap-3" href="#" role="button">Subscribe to the Newsletter</a>
+                    <a class="btn btn-outline-secondary btn-lg px-4" href="#" role="button">Available APIs</a>
+                </div>
+            </div>
+        </div> 
+    </div>
+    <footer class="container pt-0 py-5 my-md-5">
+        <div class="row">
+            <div class="col-6 col-md">
+                <p class="h5">Open-Meteo</p>
+                <ul class="list-unstyled text-small">
+                    <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Features</a></li>
+                    <li class="mb-1"><a  class="link-secondary text-decoration-none" href="#">Pricing</a></li>
+                    <li class="mb-1"><a  class="link-secondary text-decoration-none" href="#">About us & Contact</a></li>
+                    <li class="mb-1"><a  class="link-secondary text-decoration-none" href="#">License</a></li>
+                    <li class="mb-1"><a  class="link-secondary text-decoration-none" href="#">Terms & privacy</a></li>
+                </ul>
+            </div>
+            <div class="col-6 col-md">
+                <p class="h5">Weather APIs</p>
+                <ul class="list-unstyled text-small">
+                    <li class="mb-1"><a  class="link-secondary text-decoration-none" href="#">Weather Forecast API</a></li>
+                    <li class="mb-1"><a  class="link-secondary text-decoration-none" href="#">Historical Weather APi</a></li>
+                    <li class="mb-1"><a  class="link-secondary text-decoration-none" href="#">ECMWF API</a></li>
+                    <li class="mb-1"><a  class="link-secondary text-decoration-none" href="#">GFS & HRRR Forecast API</a></li>
+                    <li class="mb-1"><a  class="link-secondary text-decoration-none" href="#">MeteoFrance API</a></li>
+                    <li class="mb-1"><a  class="link-secondary text-decoration-none" href="#">DWD ICON API</a></li>
+                    <li class="mb-1"><a  class="link-secondary text-decoration-none" href="#">GEM API</a></li>
+                    <li class="mb-1"><a  class="link-secondary text-decoration-none" href="#">JMA API</a></li>
+                    <li class="mb-1"><a  class="link-secondary text-decoration-none" href="#">Met Norway API</a></li>
+                </ul>
+            </div>
+            <div class="col-6 col-md">
+                <p class="h5">Other APIs</p>
+                <ul class="list-unstyled text-small">
+                    <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Ensemble API</a></li>
+                    <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Climate Change ApI</a></li>
+                    <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Marine Weather ApI</a></li>
+                    <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Air Quality Api</a></li>
+                    <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Geocoding API</a></li>
+                    <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Elevation API</a></li>
+                    <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Flood API</a></li>
+                </ul>
+            </div>
+            <div class="col-6 col-md">
+                <p class="h5">External</p>
+                <ul class="list-unstyled text-small">
+                    <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">GitHub</a></li>
+                    <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Blog</a></li>
+                    <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Twitter</a></li>
+                    <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Mastodon</a></li>
+                    <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Service status and uptime</a></li>
+                </ul>
+            </div>
+            <div class="text-center pt-3">
+                @ 2022-2023 Copyright: Open-Meteo.com
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
